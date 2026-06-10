@@ -1,0 +1,66 @@
+:root {
+  /* Brand colors from Figma */
+  --color-purple-deep: #000e38;
+  --color-purple-mid: #3f186a;
+  --color-purple-light: #5a4080;
+  --gradient-hero: linear-gradient(89.72deg, #000e38 0.22%, #3f186a 52.52%);
+  --gradient-enquiry: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(6, 21, 50, 0.2) 100%);
+  --color-gold: #c9a962;
+  --color-gold-light: #e8d5b5;
+  --color-gold-pale: #f5ead8;
+  --gradient-gold: linear-gradient(180deg, #ffcc81 -43.71%, #e9c79f 118.98%);
+  --color-white: #ffffff;
+  --color-off-white: #faf8f5;
+  --color-text: #000e38;
+  --color-text-muted: #5c5470;
+  --color-focus: #f5c842;
+
+  /* Typography */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --container-max: 1407px;
+  --container-padding: 1.25rem;
+  --header-height: 100px;
+  --logo-overlap: 3.5rem;
+  --hero-height: 580px;
+  --hero-form-width: 310px;
+  --hero-form-height: 330px;
+  --hero-form-zone-width: 340px;
+  --hero-form-margin-end: 2rem;
+  --hero-stats-gap: 32px;
+  --stats-max-width: 1406.71px;
+  --stats-height: 160px;
+  --stats-padding: 17.47px;
+  --stats-column-gap: 18.47px;
+  --stats-item-gap: 14px;
+  --stats-wreath-height: 4.5rem;
+  --stats-wreath-height-desktop: 5rem;
+  --stats-text-size: 1rem;
+  --stats-text-strong-size: 1.125rem;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Animation */
+  --transition-base: 0.3s ease;
+  --marquee-duration: 35s;
+  --exhibition-marquee-duration: 40s;
+  --vertical-scroll-duration: 18s;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 2rem;
+  }
+}

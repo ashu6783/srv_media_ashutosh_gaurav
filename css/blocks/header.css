@@ -1,0 +1,48 @@
+.header {
+  position: relative;
+  z-index: 100;
+  background: var(--color-white);
+  height: var(--header-height);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: var(--space-sm);
+  padding-block: 0.5rem;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 101;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-bottom: calc(var(--logo-overlap) * -1);
+}
+
+.header__logo img {
+  display: block;
+  height: calc(var(--header-height) + var(--logo-overlap) - 0.5rem);
+  width: auto;
+}
+
+.header__cta {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --logo-overlap: 2rem;
+  }
+
+  .header__logo img {
+    height: calc(var(--header-height) + var(--logo-overlap) - 1rem);
+  }
+
+  .btn__text {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.75rem;
+  }
+}

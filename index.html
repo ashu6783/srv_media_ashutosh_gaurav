@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premier Schools Exhibition – Discover Gurugram's top 30+ schools in one place. 22nd Edition, 2-3 August 2025.">
+  <title>Premier Schools Exhibition | 22nd Edition – Gurugram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="/" aria-label="Premier Schools Exhibition – Home">
+        <img src="assets/images/logo.svg" alt="22nd Edition Premier Schools Exhibition" width="120" height="48">
+      </a>
+      <a class="header__cta btn btn--register" href="#register">
+        <span class="btn__icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="btn__text">Register Now</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <div class="hero__intro">
+            <h1 id="hero-heading" class="hero__title">
+              <span class="hero__title-line">Discover Gurugram's</span>
+              <span class="hero__title-line hero__title-line--emphasis">Top 30+ Schools</span>
+            </h1>
+            <p class="hero__subtitle">All in One Place</p>
+
+            <div class="hero__event-info">
+              <div class="hero__event-block">
+                <strong class="hero__event-primary">Apparel House,</strong>
+                <span class="hero__event-secondary">Sec 44, Gurugram</span>
+              </div>
+              <div class="hero__event-divider" aria-hidden="true"></div>
+              <div class="hero__event-block">
+                <strong class="hero__event-primary">2–3 August 2025</strong>
+                <span class="hero__event-secondary">Sat–Sun | 10AM – 6PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical marquee gallery (scroll up only) -->
+          <div class="hero__gallery" aria-hidden="true">
+            <div class="hero__gallery-viewport">
+              <div class="hero__gallery-columns">
+                <div class="hero__gallery-column">
+                  <div class="hero__gallery-column-inner">
+                    <img class="hero__gallery-img" src="assets/images/15.svg" alt="" width="108" height="156" loading="eager">
+                    <img class="hero__gallery-img" src="assets/images/18.svg" alt="" width="108" height="156" loading="eager">
+                  </div>
+                </div>
+                <div class="hero__gallery-column">
+                  <div class="hero__gallery-column-inner">
+                    <img class="hero__gallery-img" src="assets/images/16.svg" alt="" width="128" height="184" loading="eager">
+                    <img class="hero__gallery-img" src="assets/images/19.svg" alt="" width="128" height="184" loading="eager">
+                  </div>
+                </div>
+                <div class="hero__gallery-column">
+                  <div class="hero__gallery-column-inner">
+                    <img class="hero__gallery-img" src="assets/images/17.svg" alt="" width="96" height="140" loading="eager">
+                    <img class="hero__gallery-img" src="assets/images/20.svg" alt="" width="96" height="140" loading="eager">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__form-panel" id="register" role="region" aria-labelledby="enquire-heading">
+            <h2 id="enquire-heading" class="hero__form-title">Enquire Now</h2>
+            <form class="enquiry-form" action="#" method="post" novalidate>
+              <div class="enquiry-form__field">
+                <label class="enquiry-form__label" for="parent-name">Parent's Name</label>
+                <input class="enquiry-form__input" type="text" id="parent-name" name="parentName" placeholder="Parent's Name" autocomplete="name" required>
+              </div>
+              <div class="enquiry-form__field">
+                <label class="enquiry-form__label" for="phone">Phone Number</label>
+                <input class="enquiry-form__input" type="tel" id="phone" name="phone" placeholder="Phone number" autocomplete="tel" required>
+              </div>
+              <div class="enquiry-form__field">
+                <label class="enquiry-form__label" for="grade">Grade</label>
+                <select class="enquiry-form__input enquiry-form__select" id="grade" name="grade" required>
+                  <option value="" disabled selected>Which grade are you looking for?</option>
+                  <option value="nursery">Nursery</option>
+                  <option value="kg">Kindergarten</option>
+                  <option value="primary">Primary (1–5)</option>
+                  <option value="middle">Middle (6–8)</option>
+                  <option value="secondary">Secondary (9–12)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn--submit enquiry-form__submit">
+                <span class="btn__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="btn__text">Submit</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Exhibition highlights">
+      <div class="stats__inner">
+        <ul class="stats__list">
+          <li class="stats__item">
+            <img class="stats__wreath" src="assets/images/left.svg" alt="" width="47" height="83" loading="lazy">
+            <p class="stats__text">
+              <span class="stats__text-line">Trusted by</span>
+              <strong class="stats__text-strong">1 Million+</strong>
+              <span class="stats__text-line">Parents</span>
+            </p>
+            <img class="stats__wreath stats__wreath--right" src="assets/images/right.svg" alt="" width="47" height="83" loading="lazy">
+          </li>
+          <li class="stats__item">
+            <img class="stats__wreath" src="assets/images/left.svg" alt="" width="47" height="83" loading="lazy">
+            <p class="stats__text">
+              <strong class="stats__text-strong">22+</strong>
+              <strong class="stats__text-strong">Years</strong>
+              <span class="stats__text-line">of Legacy</span>
+            </p>
+            <img class="stats__wreath stats__wreath--right" src="assets/images/right.svg" alt="" width="47" height="83" loading="lazy">
+          </li>
+          <li class="stats__item">
+            <img class="stats__wreath" src="assets/images/left.svg" alt="" width="47" height="83" loading="lazy">
+            <p class="stats__text">
+              <strong class="stats__text-strong">500+</strong>
+              <span class="stats__text-line">Participating</span>
+              <span class="stats__text-line">Schools</span>
+            </p>
+            <img class="stats__wreath stats__wreath--right" src="assets/images/right.svg" alt="" width="47" height="83" loading="lazy">
+          </li>
+          <li class="stats__item">
+            <img class="stats__wreath" src="assets/images/left.svg" alt="" width="47" height="83" loading="lazy">
+            <p class="stats__text">
+              <strong class="stats__text-strong">17 Cities</strong>
+              <span class="stats__text-line">Across the</span>
+              <span class="stats__text-line">Globe</span>
+            </p>
+            <img class="stats__wreath stats__wreath--right" src="assets/images/right.svg" alt="" width="47" height="83" loading="lazy">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Participating School Logos: continuous marquee -->
+    <section class="logos-marquee" aria-labelledby="logos-heading">
+      <div class="logos-marquee__header container">
+        <h2 id="logos-heading" class="logos-marquee__title section-title">Participating Schools</h2>
+      </div>
+      <div class="logos-marquee__rows">
+        <div class="logos-marquee__row" role="region" data-direction="ltr" tabindex="0" aria-label="Participating schools row scrolling left. Hover or focus to pause.">
+          <div class="logos-marquee__track">
+            <ul class="logos-marquee__list">
+              <li class="logos-marquee__item"><img src="assets/images/ps1.svg" alt="Harrow International School" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps2.svg" alt="Shrewsbury International School" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps3.svg" alt="King's College India" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps4.svg" alt="Woodstock School" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps5.svg" alt="The Aga Khan Academy" width="274" height="120" loading="lazy"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logos-marquee__row logos-marquee__row--reverse" role="region" data-direction="rtl" tabindex="0" aria-label="Participating schools row scrolling right. Hover or focus to pause.">
+          <div class="logos-marquee__track">
+            <ul class="logos-marquee__list">
+              <li class="logos-marquee__item"><img src="assets/images/ps1.svg" alt="Harrow International School" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps2.svg" alt="Shrewsbury International School" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps3.svg" alt="King's College India" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps4.svg" alt="Woodstock School" width="274" height="120" loading="lazy"></li>
+              <li class="logos-marquee__item"><img src="assets/images/ps5.svg" alt="The Aga Khan Academy" width="274" height="120" loading="lazy"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose the School: 4 cards desktop, slider mobile -->
+    <section class="choose-school" aria-labelledby="choose-heading">
+      <div class="choose-school__inner container">
+        <h2 id="choose-heading" class="choose-school__title section-title">Choose the School that best fits you best</h2>
+        <p class="choose-school__desc">Explore top institutions and find the right fit for your child's future.</p>
+
+        <div
+          class="choose-school__slider"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="School categories"
+          data-slider="choose-school"
+          tabindex="0"
+        >
+          <div class="choose-school__viewport">
+            <ul class="choose-school__track">
+              <li class="choose-school__card" aria-roledescription="slide" aria-label="1 of 4: International Schools">
+                <div class="choose-school__card-image">
+                  <img src="assets/images/s1.svg" alt="International school campus" width="280" height="180" loading="lazy">
+                </div>
+                <div class="choose-school__card-body">
+                  <h3 class="choose-school__card-title">International Schools</h3>
+                  <p class="choose-school__card-text">Globally recognised curricula including IB, Cambridge, and American programmes.</p>
+                  <a class="choose-school__card-link" href="#register">Explore Schools</a>
+                </div>
+              </li>
+              <li class="choose-school__card" aria-roledescription="slide" aria-label="2 of 4: Boarding Schools">
+                <div class="choose-school__card-image">
+                  <img src="assets/images/s2.svg" alt="Boarding school students" width="280" height="180" loading="lazy">
+                </div>
+                <div class="choose-school__card-body">
+                  <h3 class="choose-school__card-title">Boarding Schools</h3>
+                  <p class="choose-school__card-text">Premier residential institutions fostering independence and holistic growth.</p>
+                  <a class="choose-school__card-link" href="#register">Explore Schools</a>
+                </div>
+              </li>
+              <li class="choose-school__card" aria-roledescription="slide" aria-label="3 of 4: Day Schools">
+                <div class="choose-school__card-image">
+                  <img src="assets/images/s3.svg" alt="Day school classroom" width="280" height="180" loading="lazy">
+                </div>
+                <div class="choose-school__card-body">
+                  <h3 class="choose-school__card-title">Day Schools</h3>
+                  <p class="choose-school__card-text">Leading day schools with outstanding academics, sports, and co-curriculars.</p>
+                  <a class="choose-school__card-link" href="#register">Explore Schools</a>
+                </div>
+              </li>
+              <li class="choose-school__card" aria-roledescription="slide" aria-label="4 of 4: Pre-Schools and Early Learning Centres">
+                <div class="choose-school__card-image">
+                  <img src="assets/images/s4.svg" alt="Pre-school children learning" width="280" height="180" loading="lazy">
+                </div>
+                <div class="choose-school__card-body">
+                  <h3 class="choose-school__card-title">Pre-Schools &amp; Early Learning Centres</h3>
+                  <p class="choose-school__card-text">Nurturing early-years programmes that build strong foundations for learning.</p>
+                  <a class="choose-school__card-link" href="#register">Explore Schools</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="choose-school__controls" aria-hidden="true">
+            <div class="choose-school__dots" role="group" aria-label="Select school category">
+              <button type="button" class="choose-school__dot is-active" aria-current="true" aria-label="International Schools" data-slide="0"></button>
+              <button type="button" class="choose-school__dot" aria-label="Boarding Schools" data-slide="1"></button>
+              <button type="button" class="choose-school__dot" aria-label="Day Schools" data-slide="2"></button>
+              <button type="button" class="choose-school__dot" aria-label="Pre-Schools and Early Learning Centres" data-slide="3"></button>
+            </div>
+          </div>
+          <p class="visually-hidden" aria-live="polite" data-choose-status></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-schedule banner -->
+    <section class="schedule-banner" aria-labelledby="schedule-banner-heading">
+      <div class="schedule-banner__media" aria-hidden="true">
+        <img src="assets/images/banner.svg" alt="" width="720" height="480" loading="lazy">
+      </div>
+      <div class="schedule-banner__inner">
+        <div class="schedule-banner__content">
+          <p class="schedule-banner__tagline">Exciting Opportunities for Parents!</p>
+          <h2 id="schedule-banner-heading" class="schedule-banner__title">
+            Pre-schedule Your<br>School Appointments
+          </h2>
+          <p class="schedule-banner__subtagline">To Avoid Rush</p>
+          <a class="schedule-banner__cta" href="#register">
+            <span class="schedule-banner__cta-icon" aria-hidden="true">
+              <img src="assets/images/arrow.svg" alt="" width="18" height="18">
+            </span>
+            <span class="schedule-banner__cta-text">Pre-Schedule Now</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Makes This Exhibition a Must-Visit -->
+    <section class="exhibition" aria-labelledby="exhibition-heading">
+      <div class="exhibition__inner container">
+        <h2 id="exhibition-heading" class="exhibition__title">What Makes This Exhibition a Must-Visit</h2>
+
+        <div class="exhibition__slider">
+          <div
+            class="exhibition__viewport"
+            role="region"
+            data-exhibition-marquee
+            tabindex="0"
+            aria-label="Exhibition highlights scrolling continuously. Hover or focus to pause."
+          >
+            <ul class="exhibition__track">
+              <li class="exhibition__card">
+                <div class="exhibition__card-inner">
+                  <div class="exhibition__card-icon" aria-hidden="true">
+                    <img src="assets/images/exhibition1.svg" alt="" width="58" height="80" loading="lazy">
+                  </div>
+                  <h3 class="exhibition__card-title">Interact Directly with School Heads</h3>
+                  <p class="exhibition__card-text">Get answers straight from the experts</p>
+                </div>
+              </li>
+              <li class="exhibition__card">
+                <div class="exhibition__card-inner">
+                  <div class="exhibition__card-icon" aria-hidden="true">
+                    <img src="assets/images/exhibition2.svg" alt="" width="58" height="80" loading="lazy">
+                  </div>
+                  <h3 class="exhibition__card-title">Compare Curriculum &amp; Pedagogy</h3>
+                  <p class="exhibition__card-text">Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish &amp; more</p>
+                </div>
+              </li>
+              <li class="exhibition__card">
+                <div class="exhibition__card-inner">
+                  <div class="exhibition__card-icon" aria-hidden="true">
+                    <img src="assets/images/exhibition3.svg" alt="" width="58" height="80" loading="lazy">
+                  </div>
+                  <h3 class="exhibition__card-title">Get Exclusive Fee Structures &amp; Offers</h3>
+                  <p class="exhibition__card-text">Access transparent information and avail offers</p>
+                </div>
+              </li>
+              <li class="exhibition__card">
+                <div class="exhibition__card-inner">
+                  <div class="exhibition__card-icon" aria-hidden="true">
+                    <img src="assets/images/exhibition4.svg" alt="" width="58" height="80" loading="lazy">
+                  </div>
+                  <h3 class="exhibition__card-title">Explore Schools Offerings</h3>
+                  <p class="exhibition__card-text">Preview infrastructure, co-curricular, teaching methodology and culture</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="exhibition__curve" aria-hidden="true"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <a class="footer__logo" href="/" aria-label="Premier Schools Exhibition – Home">
+        <img src="assets/images/logo.svg" alt="Premier Schools Exhibition" width="201" height="157" loading="lazy">
+      </a>
+
+      <div class="footer__grid">
+        <article class="footer__block">
+          <div class="footer__icon-box" aria-hidden="true">
+            <img src="assets/images/pin.svg" alt="" width="30" height="30">
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__heading">Corporate Office:</h3>
+            <p class="footer__detail">
+              Suite B-5, Ballygunge Park Tower,<br>
+              67B Ballygunge Circular Road, Kolkata - 700019
+            </p>
+          </div>
+        </article>
+
+        <article class="footer__block">
+          <div class="footer__icon-box" aria-hidden="true">
+            <img src="assets/images/pin.svg" alt="" width="30" height="30">
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__heading">Ahmedabad Office:</h3>
+            <p class="footer__detail">
+              12/AA, Swastik Chambers, Near CU Shah College,<br>
+              Ashram Road, Ahmedabad - 380009
+            </p>
+          </div>
+        </article>
+
+        <article class="footer__block">
+          <div class="footer__icon-box" aria-hidden="true">
+            <img src="assets/images/call.svg" alt="" width="29" height="29">
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__heading">Call us on</h3>
+            <p class="footer__detail">
+              <a class="footer__phone" href="tel:+919674805912">9674805912</a><br>
+              <a class="footer__phone" href="tel:+919674585012">9674585012</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="footer__block footer__block--social">
+          <div class="footer__content">
+            <h3 class="footer__heading">Follow us on</h3>
+            <ul class="footer__social-list">
+              <li>
+                <a class="footer__icon-box footer__social-link" href="#" aria-label="Instagram">
+                  <img src="assets/images/insta.svg" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a class="footer__icon-box footer__social-link" href="#" aria-label="Facebook">
+                  <img src="assets/images/fb.svg" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a class="footer__icon-box footer__social-link" href="#" aria-label="YouTube">
+                  <img src="assets/images/yt.svg" alt="" width="30" height="22">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <p class="footer-copyright__text">Copyright © 2026 | All rights reserved.  Premier Schools Exhibition</p>
+    </div>
+  </div>
+
+  <script src="js/slider.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

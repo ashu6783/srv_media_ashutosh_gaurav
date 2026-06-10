@@ -1,0 +1,140 @@
+.schedule-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(270deg, #ead7ff 45.09%, #dec1ff 100%);
+}
+
+.schedule-banner__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1363px;
+  margin-inline: auto;
+}
+
+.schedule-banner__content {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-md) var(--container-padding);
+}
+
+.schedule-banner__tagline,
+.schedule-banner__subtagline {
+  font-family: "FONTSPRING DEMO - Museo Sans 500", "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  background: linear-gradient(270deg, #755797 0%, #9b4df0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule-banner__tagline {
+  margin-bottom: var(--space-xs);
+}
+
+.schedule-banner__title {
+  font-family: "FONTSPRING DEMO - Museo Sans 500", "Open Sans", sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.3;
+  color: #101145;
+  margin-bottom: var(--space-xs);
+}
+
+.schedule-banner__subtagline {
+  margin-bottom: var(--space-sm);
+}
+
+.schedule-banner__cta {
+  display: inline-flex;
+  align-items: stretch;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #101145;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.schedule-banner__cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(360deg, #000e38 0%, #3f186a 100%);
+}
+
+.schedule-banner__cta-text {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 0.75rem 1.25rem;
+  background: #ead7ff;
+  color: #101145;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.schedule-banner__media {
+  height: 12rem;
+}
+
+.schedule-banner__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+@media (min-width: 768px) {
+  .schedule-banner {
+    min-height: 22rem;
+  }
+
+  .schedule-banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    min-height: 22rem;
+    padding: 2rem 2rem 2rem 4rem;
+  }
+
+  .schedule-banner__tagline,
+  .schedule-banner__subtagline {
+    font-size: 1.5rem;
+  }
+
+  .schedule-banner__title {
+    font-size: 2.5rem;
+  }
+
+  .schedule-banner__media {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .schedule-banner__media img {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 25%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 25%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .schedule-banner {
+    min-height: 26rem;
+  }
+
+  .schedule-banner__content {
+    min-height: 26rem;
+    padding-left: 6rem;
+  }
+}

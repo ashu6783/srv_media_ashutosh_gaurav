@@ -1,0 +1,186 @@
+.choose-school {
+  padding-block: var(--space-xl);
+  background: var(--color-white);
+}
+
+.choose-school__title {
+  font-family: "FONTSPRING DEMO - Museo Sans 700", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.choose-school__desc {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 560px;
+  margin: var(--space-sm) auto var(--space-lg);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Desktop: 4-card grid */
+.choose-school__viewport {
+  overflow: visible;
+}
+
+.choose-school__track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.choose-school__card {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.choose-school__card:hover {
+  box-shadow: 0 8px 24px rgba(43, 27, 74, 0.25);
+  transform: translateY(-2px);
+}
+
+.choose-school__card-image {
+  position: absolute;
+  inset: 0;
+}
+
+.choose-school__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.choose-school__card-body {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: var(--space-md);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-school__card-title {
+  font-family: "FONTSPRING DEMO - Museo Sans 700", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--color-white);
+  line-height: 1.35;
+  letter-spacing: 0;
+  margin-bottom: var(--space-xs);
+}
+
+.choose-school__card-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-bottom: var(--space-sm);
+}
+
+.choose-school__card-link {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.choose-school__card-link:hover {
+  color: var(--color-gold);
+}
+
+/* Mobile controls hidden on desktop */
+.choose-school__controls {
+  display: none;
+}
+
+.choose-school__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: var(--space-md);
+}
+
+.choose-school__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: rgba(43, 27, 74, 0.2);
+  transition: background var(--transition-base), transform var(--transition-base);
+}
+
+.choose-school__dot.is-active,
+.choose-school__dot[aria-selected="true"] {
+  background: var(--color-purple-deep);
+  transform: scale(1.2);
+}
+
+/* Mobile: slider */
+@media (max-width: 767px) {
+  .choose-school__viewport {
+    overflow: hidden;
+    margin-inline: calc(-1 * var(--container-padding));
+    padding-inline: var(--container-padding);
+  }
+
+  .choose-school__track {
+    display: flex;
+    gap: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .choose-school__card {
+    flex: 0 0 85%;
+    min-width: 85%;
+    margin-right: var(--space-sm);
+  }
+
+  .choose-school__card:hover {
+    transform: none;
+  }
+
+  .choose-school__controls {
+    display: block;
+  }
+
+  .choose-school__controls[aria-hidden="true"] {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .choose-school__track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .choose-school__track {
+    transition: none;
+  }
+
+  .choose-school__card {
+    transition: none;
+  }
+}

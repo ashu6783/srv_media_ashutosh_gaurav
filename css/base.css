@@ -1,0 +1,131 @@
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-purple-deep);
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--container-padding);
+  z-index: 1000;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-gold);
+  color: var(--color-purple-deep);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: top var(--transition-base);
+}
+
+.skip-link:focus {
+  top: var(--space-sm);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: var(--color-purple-mid);
+  color: var(--color-white);
+}
+
+.btn__text {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-white);
+  color: var(--color-purple-deep);
+  border: 1px solid var(--color-purple-mid);
+}
+
+.btn--register {
+  border: 2px solid #000e38;
+  box-sizing: border-box;
+}
+
+.btn--register .btn__icon {
+  background: linear-gradient(270deg, #000e38 0%, #3f186a 100%);
+  color: #fff;
+}
+
+.btn--register .btn__text {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn--submit {
+  margin-top: var(--space-sm);
+}
+
+.btn--submit .btn__icon {
+  background: var(--color-white);
+  color: var(--color-purple-deep);
+}
+
+.btn--submit .btn__text {
+  background: var(--color-purple-mid);
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn--large .btn__icon,
+.btn--large .btn__text {
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}

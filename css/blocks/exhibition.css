@@ -1,0 +1,172 @@
+.exhibition {
+  padding-bottom: var(--space-md);
+  background: linear-gradient(360deg, #000e38 0%, #3f186a 100%);
+}
+
+.exhibition__curve {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1920 / 185;
+  background: linear-gradient(0deg, #000e38 0%, #3f186a 304.02%);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 185' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1920V34.8164C1169 236.046 748.424 232.194 0 34.8164V0Z' fill='%23fff'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 185' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1920V34.8164C1169 236.046 748.424 232.194 0 34.8164V0Z' fill='%23fff'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.exhibition__inner {
+  padding-top: var(--space-lg);
+}
+
+.exhibition__title {
+  font-family: "FONTSPRING DEMO - Museo Sans 700", "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: var(--space-md);
+}
+
+.exhibition__slider {
+  position: relative;
+}
+
+.exhibition__viewport {
+  overflow: hidden;
+  margin-inline: calc(var(--container-padding) * -0.5);
+  padding-inline: calc(var(--container-padding) * 0.5);
+}
+
+.exhibition__viewport:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+.exhibition__track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: exhibition-marquee var(--exhibition-marquee-duration) linear infinite;
+}
+
+.exhibition__viewport:hover .exhibition__track,
+.exhibition__viewport:focus .exhibition__track,
+.exhibition__viewport:focus-within .exhibition__track {
+  animation-play-state: paused;
+}
+
+@keyframes exhibition-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.exhibition__card {
+  flex: 0 0 min(85%, 17rem);
+  min-width: min(85%, 17rem);
+  padding: 2px;
+  border-radius: 0.75rem;
+  background: linear-gradient(315.27deg, #755797 2.63%, #070f3d 93.79%);
+}
+
+.exhibition__card[hidden] {
+  display: none;
+}
+
+.exhibition__card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 11rem;
+  height: 100%;
+  padding: 1rem 1rem;
+  border-radius: calc(0.75rem - 2px);
+  background: linear-gradient(59.05deg, #ddbfff 0.39%, #edddff 93.5%);
+}
+
+.exhibition__card-icon {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 3.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.exhibition__card-icon img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.exhibition__card-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 140%;
+  letter-spacing: 0;
+  margin-bottom: 0.375rem;
+  background: linear-gradient(360deg, #000e38 0%, #3f186a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exhibition__card-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0;
+  background: linear-gradient(360deg, #000e38 0%, #3f186a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .exhibition__card {
+    flex: 0 0 17rem;
+    min-width: 17rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .exhibition__inner {
+    padding-top: var(--space-xl);
+  }
+
+  .exhibition__title {
+    margin-bottom: 2rem;
+  }
+
+  .exhibition__card-inner {
+    min-height: 11.5rem;
+    padding: 1.125rem 1.125rem;
+  }
+
+  .exhibition__card-title {
+    font-size: 1.25rem;
+  }
+
+  .exhibition__card-text {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exhibition__track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .exhibition__card[data-generated="true"] {
+    display: none;
+  }
+}
