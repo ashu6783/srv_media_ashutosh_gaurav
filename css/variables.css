@@ -59,6 +59,14 @@
   --vertical-scroll-duration: 18s;
 }
 
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+    --header-height: 80px;
+    --hero-stats-gap: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   :root {
     --container-padding: 2rem;

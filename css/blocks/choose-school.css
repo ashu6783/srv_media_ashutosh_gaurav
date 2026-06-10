@@ -1,5 +1,5 @@
 .choose-school {
-  padding-block: var(--space-xl);
+  padding-block: clamp(2rem, 6vw, var(--space-xl));
   background: var(--color-white);
 }
 
@@ -7,8 +7,8 @@
   font-family: "FONTSPRING DEMO - Museo Sans 700", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 150%;
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  line-height: 1.35;
   letter-spacing: 0;
   text-align: center;
 }
@@ -165,7 +165,7 @@
   }
 
   .choose-school__controls[aria-hidden="true"] {
-    display: block;
+    display: none;
   }
 }
 

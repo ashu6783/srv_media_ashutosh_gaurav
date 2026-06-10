@@ -19,7 +19,9 @@
 .hero__intro {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: var(--space-sm);
+  text-align: left;
 }
 
 .hero__title {
@@ -71,11 +73,11 @@
 .hero__event-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 0.25rem;
   padding: 0.625rem 0.875rem;
-  text-align: center;
+  text-align: left;
   color: var(--color-purple-deep);
 }
 
@@ -181,13 +183,48 @@
 }
 
 @media (max-width: 1023px) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__intro {
+    order: 1;
+  }
+
+  .hero__form-panel {
+    order: 2;
+    max-width: none;
+  }
+
   .hero__gallery {
-    min-height: 320px;
+    order: 3;
+    min-height: 240px;
   }
 
   .hero__gallery-viewport,
   .hero__gallery-columns {
-    min-height: 320px;
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__event-info {
+    grid-template-columns: 1fr;
+    border-radius: var(--radius-md);
+  }
+
+  .hero__event-divider {
+    width: auto;
+    height: 1px;
+    margin-inline: 0.875rem;
+    margin-block: 0;
+  }
+
+  .hero__gallery,
+  .hero__gallery-viewport,
+  .hero__gallery-columns {
+    min-height: 200px;
   }
 }
 
@@ -199,6 +236,8 @@
 
 /* Enquiry form panel */
 .hero__form-panel {
+  position: relative;
+  z-index: 2;
   width: 100%;
   max-width: var(--hero-form-width);
   background: var(--gradient-enquiry);
@@ -206,7 +245,6 @@
   border-radius: 12px;
   padding: 1rem;
   box-sizing: border-box;
-  opacity: 1;
   display: flex;
   flex-direction: column;
 }
@@ -223,8 +261,16 @@
 .enquiry-form {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-height: 0;
+}
+
+.enquiry-form .btn {
+  transition: none;
+}
+
+.enquiry-form .btn:hover,
+.enquiry-form .btn:active {
+  opacity: 1;
+  transform: none;
 }
 
 .enquiry-form__field {
@@ -236,7 +282,8 @@
 }
 
 .enquiry-form__submit {
-  margin-top: auto;
+  margin-top: 0.25rem;
+  width: 100%;
 }
 
 .enquiry-form__label {
@@ -249,6 +296,7 @@
 
 .enquiry-form__input {
   width: 100%;
+  min-height: 2.75rem;
   padding: 0.75rem 0.875rem;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
@@ -298,7 +346,6 @@
   .hero {
     height: var(--hero-height);
     min-height: var(--hero-height);
-    max-height: var(--hero-height);
     display: flex;
     flex-direction: column;
   }
@@ -334,12 +381,12 @@
   .hero__intro {
     grid-column: 1;
     align-self: center;
-    justify-self: center;
+    justify-self: start;
     width: 100%;
     max-width: 26rem;
     padding-top: 0;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .hero__gallery {
@@ -384,29 +431,9 @@
     grid-column: 3;
     grid-row: 1;
     width: var(--hero-form-width);
-    height: var(--hero-form-height);
     margin: 0;
     justify-self: end;
     align-self: center;
     margin-inline-start: var(--space-md);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .hero__content {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hero__intro {
-    grid-column: 1 / -1;
-  }
-
-  .hero__form-panel {
-    grid-column: 1;
-    max-width: var(--hero-form-width);
-  }
-
-  .hero__gallery {
-    grid-column: 2;
   }
 }

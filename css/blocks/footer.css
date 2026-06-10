@@ -153,10 +153,20 @@
 .footer-copyright__text {
   font-family: "FONTSPRING DEMO - Museo Sans 500", "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.8125rem;
+  font-size: clamp(0.6875rem, 2.5vw, 0.8125rem);
   line-height: 1.4;
   letter-spacing: 0;
   text-align: center;
   color: var(--color-text);
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding-block: var(--space-md);
+  }
+
+  .footer__inner {
+    gap: var(--space-sm);
+  }
 }

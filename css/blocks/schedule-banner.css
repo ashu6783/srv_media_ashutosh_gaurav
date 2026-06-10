@@ -17,6 +17,22 @@
   padding: var(--space-md) var(--container-padding);
 }
 
+@media (max-width: 767px) {
+  .schedule-banner__tagline,
+  .schedule-banner__subtagline {
+    font-size: 1rem;
+  }
+
+  .schedule-banner__cta-text {
+    font-size: 0.75rem;
+    padding: 0.625rem 1rem;
+  }
+
+  .schedule-banner__cta-icon {
+    padding: 0.625rem 0.75rem;
+  }
+}
+
 .schedule-banner__tagline,
 .schedule-banner__subtagline {
   font-family: "FONTSPRING DEMO - Museo Sans 500", "Open Sans", sans-serif;

@@ -1,5 +1,5 @@
 .logos-marquee {
-  padding-block: var(--space-xl);
+  padding-block: clamp(2rem, 6vw, var(--space-xl));
   background: var(--color-white);
   overflow: hidden;
 }
