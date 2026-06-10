@@ -1,7 +1,5 @@
 # Premier Schools Exhibition – Landing Page
 
-Static landing page built from the [Figma design](https://www.figma.com/design/uZ4DJ3er9xPeKYeb80VdMG/Premier-Schools-Exhibition--PSE--LP--12-06-2025-), following the provided development guidelines.
-
 ## Stack
 
 - Semantic HTML5
@@ -43,21 +41,25 @@ Open `http://localhost:8080` in your browser.
 
 Drop your exported Figma assets into `assets/images/` and update `index.html` `src` paths:
 
-| Placeholder | Replace with |
-|-------------|--------------|
+
+| Placeholder       | Replace with                            |
+| ----------------- | --------------------------------------- |
 | `placeholder.svg` | Hero child photos, category card images |
-| `logo-pse.svg` | Official PSE logo |
-| `school-*.svg` | Participating school logos |
-| `icon-*.svg` | Exhibition section icons |
+| `logo-pse.svg`    | Official PSE logo                       |
+| `school-*.svg`    | Participating school logos              |
+| `icon-*.svg`      | Exhibition section icons                |
+
 
 ## Interactive Sections
 
-| Section | Desktop | Mobile |
-|---------|---------|--------|
-| **Hero** | Dual-axis slider: horizontal text/gallery slides + vertical scrolling pill columns | Stacked layout, swipe enabled |
-| **School Logos** | Continuous marquee, alternating LTR / RTL rows | Same, pauses on hover/focus |
-| **Choose the School** | 4-card grid | Swipeable slider with pagination dots |
-| **Exhibition** | Multi-card carousel (2–3 visible) | Single-card slider |
+
+| Section               | Desktop                                                                            | Mobile                                |
+| --------------------- | ---------------------------------------------------------------------------------- | ------------------------------------- |
+| **Hero**              | Dual-axis slider: horizontal text/gallery slides + vertical scrolling pill columns | Stacked layout, swipe enabled         |
+| **School Logos**      | Continuous marquee, alternating LTR / RTL rows                                     | Same, pauses on hover/focus           |
+| **Choose the School** | 4-card grid                                                                        | Swipeable slider with pagination dots |
+| **Exhibition**        | Multi-card carousel (2–3 visible)                                                  | Single-card slider                    |
+
 
 All sliders support keyboard navigation (`←` `→` `Home` `End`), touch swipe, pause on hover/focus, and honour `prefers-reduced-motion`.
 
